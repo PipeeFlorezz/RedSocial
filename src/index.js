@@ -35,7 +35,8 @@ app.use('/', express.static(path.resolve('src/public/imgs')));
 
 app.listen(app.get('port'), () => {
     console.log('node en el puerto: ' + app.get('port'));
-    console.log(__dirname)
+    console.log('Objeto __dirname: ' + __dirname);
+    console.log('Objeto pathResolve: ' + path.resolve());
     console.log('PathResolve: ' + path.resolve())
 });
 
